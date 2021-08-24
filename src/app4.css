@@ -1,0 +1,24 @@
+#app4 {
+  position: relative;
+}
+@keyframes change {
+  0% {
+    background: red;
+  }
+  100% {
+    background: blue;
+  }
+}
+#app4 .ellipse {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  width: 30vw;
+  height: 25vw;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+#app4 .ellipse.active {
+  animation: change 1.5s infinite alternate linear;
+}
